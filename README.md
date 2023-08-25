@@ -15,7 +15,7 @@ Get-ChildItem -Path . -Recurse -File -Filter "*.heic" | Select-Object -ExpandPro
 
 ## Get sorted file types based on size from the current directory:
 
-Get-ChildItem -File -Recurse -Path . |
+`Get-ChildItem -File -Recurse -Path . |
     Group-Object Extension |
     ForEach-Object {
         $extension = $_.Name.TrimStart('.')
@@ -30,7 +30,7 @@ Get-ChildItem -File -Recurse -Path . |
     Sort-Object TotalSizeMB -Descending |
     ForEach-Object {
         "{0}: {1} files, Total Size: {2:N2} MB" -f $_.Extension, $_.FileCount, $_.TotalSizeMB
-    }
+    }`
 
 
 
