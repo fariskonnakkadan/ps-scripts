@@ -7,7 +7,7 @@ PS D:\Recovered> .\move.ps1 -fileExtension ".mov" -destinationFolder "D:\mov\"
 
 
 ## Get Count of each type (by extension) of files in current directory.
-Get-ChildItem -File -Recurse -Path . | Group-Object Extension | Sort-Object Count -Descending | ForEach-Object { "{0}: {1}" -f $_.Name.TrimStart('.'), $_.Count }
+`Get-ChildItem -File -Recurse -Path . | Group-Object Extension | Sort-Object Count -Descending | ForEach-Object { "{0}: {1}" -f $_.Name.TrimStart('.'), $_.Count }`
 
 
 ## List given file format files
