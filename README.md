@@ -11,7 +11,7 @@ PS D:\Recovered> .\move.ps1 -fileExtension ".mov" -destinationFolder "D:\mov\"
 
 
 ## List given file format files
-Get-ChildItem -Path . -Recurse -File -Filter "*.heic" | Select-Object -ExpandProperty FullName
+`Get-ChildItem -Path . -Recurse -File -Filter "*.heic" | Select-Object -ExpandProperty FullName`
 
 ## Get sorted file types based on size from the current directory:
 
