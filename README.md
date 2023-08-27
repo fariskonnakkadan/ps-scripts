@@ -1,6 +1,8 @@
 ## Delete selected extension from current folder:
 PS D:\Recovered> .\delete.ps1 -targetExtension ".py", ".txt", ".h", ".html", ".java", ".png", ".xml", ".pyc", ".plist", ".ini", ".deb", ".cab", ".jar", ".php", ".jsp", ".zip", ".gif", ".webp", ".webm", ".dll", ".a", ".pl", ".csv", ".rar", ".gz", ".sqlite", ".f", ".exe", ".c", ".vmdk", ".svg", ".woff", ".ttf", ".elf", ".pcap", ".icns", ".bz2", ".sh", ".hdf", ".jks", ".shp", ".wav", ".rb", ".go", ".asp", ".pm", ".sxw", ".ico", ".tz", ".gpg", ".json", ".class", ".apple", ".apk", ".3gp", ".avi", ".vdi", ".DS_Store", ".xlsx", ".xls"
 
+## BAsh Search File extension:
+`find . -type f -name "*.kdbx"`
 
 ## Move selected extension files recursively from current folder
 PS D:\Recovered> .\move.ps1 -fileExtension ".mov" -destinationFolder "D:\mov\"
